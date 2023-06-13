@@ -1,0 +1,180 @@
+.patientsList{
+    margin: 20px;
+}
+.patientsListWrapper{
+    margin-top: 10px;
+    width: 100%;
+}
+.patientsListItems{
+    width: 100%;
+}
+.patientsListItem{
+    margin: 10px 0px;
+    width: 100%;
+    height: 70px;
+}
+
+.patientsListItemCard{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 20px;
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+}
+.patientsListItemCardProfileWrapper{
+    width: 80px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.patientsListItemCardicProfilePicWrapper{
+    width: 50px;
+    aspect-ratio: calc(1/1);
+    height: auto;
+    border-radius: 50%;
+}
+.patientsListItemCardProfileInfoName{
+    font-size: 20px;
+    font-weight: 600;
+    color: grey;
+}
+
+.patientsListItemCardProfileInfoEmail{
+    font-size: 15px;
+    font-weight: 400;
+    color: grey;
+}
+
+.patientsListItemCardProfileButtons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.patientsListItemCardProfileDetails{
+    margin-right: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.patientsListItemCardProfileButtons .btn{
+    margin: 5px;
+    border: none;
+    padding: 4px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.patientsListItemCardProfileButtons .Details {
+    background-color:royalblue;
+    width: 80px;
+}
+
+.patientsListItemCardProfileButtons .edit {
+    background-color:green;
+    width: 60px;
+}
+.patientsListItemCardProfileButtons .discharge {
+    background-color: tomato;
+    width: 100px;
+}
+
+.patientsListItemCardProfileButtons .Details:hover {
+    background-color: rgb(10, 65, 231);
+}
+
+.patientsListItemCardProfileButtons .edit:hover {
+    background-color: rgb(2, 99, 2);
+}
+
+.patientsListItemCardProfileButtons .discharge:hover {
+    background-color: rgb(242, 70, 40);
+}
+
+.nameTitle{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.patientsListIcon{
+    display: none;
+}
+
+.showDetails{
+    position: absolute;
+    top: 0;
+    background-color: bisque;
+    width: 100%;
+    height: 600px;
+    display: none;
+}
+
+.detailsModalWrapper{
+    background-color: rgba(0, 0, 0, 0.47);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.detailsModal{
+    background-color: #fff;
+    width: 90%;
+    height:90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+    padding-bottom: -20px;
+    position: relative;
+}
+.detailsCloseIcon{
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    color: gray;
+    cursor: pointer;
+}
+.detailsCloseIcon:hover, .detailsCloseIcon:focus {
+    color: black;
+}
+
+.hideModal{
+    display: none;
+}
+
+@media (max-width: 620px){
+    
+    .nameTitle{
+        display: none;
+    }
+
+    .patientsListIcon{
+        display: block;
+        font-size: 0px;
+    }
+
+    .patientsListItemCardProfileButtons .btn{
+        background-color: transparent;
+        width: fit-content;
+    }
+
+    .patientsListItemCardProfileButtons .btn:hover{
+        background-color: lightgray;
+    }
+
+
+}

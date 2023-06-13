@@ -1,0 +1,141 @@
+.sidebar{
+    flex: 1;
+    border-right: 0.5px solid lightgray;
+    min-height: 100vh;
+    background-color: white;
+}
+
+.sidebar-top{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-logo{
+    font-size: 20px;
+    font-weight: bold;
+    color: #6439ff;
+}
+
+.sidebar-line{
+    height: 0;
+    border: 0.5px solid lightgray;
+}
+
+.sidebar-center{
+    padding-left: 10px;
+}
+
+.sidebar-items{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.sidebar-item:hover {
+    background-color: rgb(217, 212, 255);
+}
+
+.sidebar-icon{
+    font-size: 10px;
+    margin-right: 10px;
+    color: #7451f8;
+    transition: 0.5s ease;
+}
+
+.sidebar-item-title{
+    font-size: 15px;
+    font-weight: 600;
+    color: #888; 
+    transition: 0.5s ease;
+}
+
+.sidebar-bottom{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.color-options{
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid #7451f8;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.color-options:nth-child(1){
+    background-color: whitesmoke;
+}
+.color-options:nth-child(2) {
+    background-color: #333;
+}
+.color-options:nth-child(3) {
+    background-color: darkblue;
+}
+
+@media (max-width: 840px){
+    .sidebar-item {
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+        padding: 10px 0px;
+    }
+
+    .sidebar-icon {
+        margin-right: 0px;
+    }
+
+    .sidebar-bottom {
+    justify-content: center;
+    }
+
+}
+
+@media (max-width: 790px) {
+
+    .sidebar {
+        flex: 0.4;
+        width: 50px;
+    }
+
+    .sidebar-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sidebar-item {
+        border-radius: 50%;
+        width: 50px;
+    }
+
+    .sidebar-icon {
+        margin-right: 0px;
+    }
+
+    .sidebar-bottom {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sidebar-item-title {
+        display: none;
+    }
+
+    .sidebar-bottom {
+        margin:0px;
+    }
+
+}
+

@@ -1,0 +1,78 @@
+.widget{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding: 10px;
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    border-radius: 10px;
+    height: 100px; 
+}
+
+.widget:hover{
+    -webkit-box-shadow: 2px 5px 11px 2px rgba(0, 0, 0, 0.47);
+    box-shadow: 5px 7px 13px 5px #c9c9c978;
+    min-width: none;
+}
+
+.widgetLeft, .widgetRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.widgetTitle{
+    font-weight: bold;
+    font-size: 14px;
+    color: rgb(160,160,160);
+}
+.widgetCounter{
+    font-size: 28px;
+    font-weight: 300;
+}
+.widgetLink{
+    width: max-content;
+    font-size: 12px;
+    border-bottom: 1px solid gray;
+}
+
+.widgetLink:hover{
+    color: rgba(121, 20, 210, 0.717);
+    border-color: rgba(121, 20, 210, 0.717);
+}
+
+.widgetPercentage{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.widgetPercentage.positive{
+    color: green;
+}
+
+.widgetPercentage.negative {
+    color: red;
+}
+
+.widgetIcon{
+    font-size: 10px;
+    padding: 5px;
+    background-color: rgba(161, 88, 161, 0.501);
+    border-radius: 5px;
+    align-self: flex-end;
+}
+
+.widgetIcon:hover{
+    translate: 0px -2px;
+}
+
+.setWidgetButton{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+@media (max-width: 790px) {
+
+}

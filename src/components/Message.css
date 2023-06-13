@@ -1,0 +1,75 @@
+.message{
+    width: calc(100%-40px);
+    height: 60px;
+    margin: 20px;
+    display: flex;
+    position: relative;
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    border-radius: 10px;
+    padding: 10px 5px;
+}
+
+.messageLeft{
+    width: 60px;
+    display: flex;align-items: center;
+    justify-content: center;
+    line-height: 60px;
+}
+.MessagePic{
+    border-radius: 50%;
+    width: 55px;
+    height: auto;
+    aspect-ratio: calc(1/1);
+}
+
+.messageCenter{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.MessageSender{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.MessageContent{
+    font-size: 15px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.messageRight{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    position: absolute;
+    right: 5px;
+    top: 3px;
+}
+.MessageTime{
+    font-size: 15px;
+    font-weight: 350;
+}
+.newMessages{
+    font-size: 15px;
+    margin-right: 20px;
+    margin-top: 2px;
+    background-color: royalblue;
+    color: white;
+    aspect-ratio: calc(1/1);
+    height: auto;
+    width: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.hideNewMessages{
+    display: none;
+}

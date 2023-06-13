@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+nav{
+    background-color: rgb(0, 1, 58);
+    height: 80px;
+    width: 100%;
+}
+
+.logo{
+    font-size: 30px;
+    padding: 0 100px;
+    color: white;
+    line-height: 80px;
+    text-decoration: none;
+}
+
+.logo:hover{
+    color: darkgray;
+    transition: 0.5s ease-in;
+}
+
+.nav-ul{
+    float: right;
+    margin-right: 40px;
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+
+.link{
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.nav-btn{
+    width: 80px;
+    font-size: 13px;
+    text-transform: uppercase;
+    background-color:white;
+}
+
+.link:hover, .active{
+    border: 1px solid white;
+    transition: 0.5s;
+    color: white
+}
+
+nav #icon {
+    size: 30px;
+    color: white;
+    padding: 0 0px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+.fas.fa-bars, .fas.fa-times{
+    color: #fff;
+}
+
+@media(max-width: 1048px){
+    .logo{
+        font-size: 32px;
+        padding-left: 60px;
+    }
+
+    nav ul{
+        margin-right: 20px;
+    }
+
+    .link{
+        font-size: 17px;
+    }
+
+    .link:hover{
+        color: darkgray;
+        transition: 0.5s ease-in;
+    }
+}
+
+@media(max-width: 909px){
+    nav #icon{
+        display:block;
+        color: white;
+    }
+
+    .nav-ul{
+        z-index: 1;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2f3640;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    nav li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    .link{
+        font-size: 20px;
+    }
+    .active,.link:hover{
+        border: none;
+        color: #3498db;
+    }
+
+    .nav-ul-open {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2f3640;
+        top: 80px;
+        left: 0;
+        text-align: center;
+        transition: all 0.5s;
+        z-index: 1;
+        overflow: hidden;
+    }
+
+}

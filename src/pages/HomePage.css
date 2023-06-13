@@ -1,0 +1,67 @@
+.seperator{
+    margin-top: 50px;
+    width: 100%;
+    background-color: royalblue;
+    display: flex;
+    padding: 20px 25%;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.seperatorContent{
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+}
+
+.seperatorContentTop{
+    color: #fff;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.seperatorContentBottom{
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seperatorButtonContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seperatorButton{
+    color: royalblue;
+    font-weight: 500;
+    font-size: 17px;
+    width: 180px;
+    border-radius: 20px;
+    border: none;
+}
+
+.seperatorButton:hover{
+    background-color: royalblue;
+    border: 2px solid white;
+    color: #fff;
+}
+
+@media (max-width: 500px) {
+    .seperator{
+        padding-left: 50px;
+    }
+    .seperatorContentTop{
+        font-size: 15px;
+    }
+    .seperatorContentBottom{
+        font-size: 22px;
+    }
+    .seperatorButton{
+        margin-left: 30px;
+        width: 120px;
+        font-size: 15px;
+    }
+}

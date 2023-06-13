@@ -1,0 +1,69 @@
+.slider{
+    width: 100%;
+    height: auto;
+    aspect-ratio: calc(2/0.9);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+}
+
+.arrow{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    top: 0;
+    bottom: 0;
+
+}
+
+.arrow.Left{
+    left: 35px;
+}
+
+.arrow.Right{
+    right: 35px;
+}
+
+.arrow:hover{
+    color: lightgray;
+    cursor: pointer;
+}
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    
+}
+.bulletOption{
+    color: #fff;
+    font-size: 40px;
+    margin: 2px;
+}
+
+.bulletOption.active{
+    color: gray;
+}
+
+.bulletOption:hover{
+    color: lightgray;
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    .slider{
+        height: calc(100vh - 135px);
+    }
+}

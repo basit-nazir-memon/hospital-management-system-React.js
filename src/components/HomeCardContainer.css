@@ -1,0 +1,60 @@
+.CardContainerWrapper{
+    margin-top: 40px;
+    width: 100%;
+    border-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.CardContainerTitle{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.Cards{
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.Card{
+    margin: 7px;
+    width: calc(25%);
+}
+
+.MainHR{
+    margin-left: calc(50% - 50px);
+    width: 100px;
+    background-color: royalblue;
+    border-color: royalblue;
+    height: 5px;
+    border-radius: 20px;
+    outline: royalblue;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 500px) {
+    .CardContainerTitle{
+        font-size: 22px;
+        width: 80%;
+        margin-left: 10%;
+        text-align: center;
+    }
+
+    .Cards{
+        flex-direction: column;
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .Card {
+        width: 100%;
+    }
+}

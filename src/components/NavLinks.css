@@ -1,0 +1,48 @@
+
+.Nav_Items{
+    margin-top: 10px;
+}
+
+.Navlinks{
+    width: 100%;
+    height: 55px;
+    font-size: 20px;
+    margin-left: 10px;
+    line-height: 55px;
+}
+
+
+.NavLinks_content{
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+}
+
+.Nav_Items:hover{
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+@media(max-width: 700px){
+    .Navlinks {
+        width: 100%;
+        height: 55px;
+        font-size: 20px;
+        margin-left: 10px;
+        line-height: 55px;
+    }
+    .Nav_Items {
+        align-items: center;margin-left: 7%;
+        list-style: none;
+        width: 70%;
+    }
+    .NavLinks_content {
+        margin-left: 30px;
+    }
+    .Nav_Items:hover {
+        font-weight: bold;
+        border: 2px solid royalblue;
+        border-radius: 20px;
+    }
+}

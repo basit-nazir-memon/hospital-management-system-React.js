@@ -1,0 +1,207 @@
+.ProfileCard {
+    margin-top: -50px;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profileCardSmall {
+    -webkit-box-shadow: 1px 5px 11px 2px rgba(0, 0, 0, 0.47);
+    box-shadow: 0px 0px 13px 5px #c9c9c978;
+    width: 25%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.profileCardLarge {
+    -webkit-box-shadow: 2px 5px 11px 2px rgba(0, 0, 0, 0.47);
+    box-shadow: 0px 0px 13px 5px#c9c9c978;
+    width: 73%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profilePicWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.ProfilePic {
+    width: 80%;
+    aspect-ratio: calc(1/1);
+    border: none;
+    border-radius: 50%;
+    -webkit-box-shadow: 2px 5px 11px 2px rgba(0, 0, 0, 0.47);
+    box-shadow: 0px 0px 5px 5px#c9c9c978;
+}
+
+.ProfileName {
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: gray;
+}
+
+.ProfileEmail {
+    font-size: 15px;
+    font-weight: 400;
+    color: darkgray;
+}
+
+.PersonalInfo {
+    margin: 10px;
+}
+
+.PersonalInfoItemWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.PersonalInfoItem {
+    margin: 15px;
+    display: flex;
+    width: 50%;
+}
+
+.PersonalInfoItemTitle {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.PersonalInfoItem.full {
+    width: 100%;
+}
+
+.PeronalInfoItemDesc {
+    margin-left: 10px;
+    padding-left: 10px;
+    font-size: 18px;
+    font-weight: 350;
+}
+
+@media (max-width: 1080px) {
+    .ProfileCard {
+        flex-direction: column;
+    }
+
+    .profileCardSmall {
+        width: 100%;
+        height: 20%;
+    }
+
+    .profileCardLarge {
+        width: 100%;
+        height: 78%;
+    }
+
+    .profilePicWrapper {
+        display: flex;
+        flex-direction: column;
+        margin-top: -60px;
+    }
+
+    .ProfilePic {
+        width: 130px;
+    }
+
+    .ProfileName {
+        margin: 0px;
+        font-size: 20px;
+        font-stretch: wider;
+    }
+
+    .ProfileEmail {
+        display: none;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .ProfileCard {
+        height: calc(100%);
+        width: 100%;
+    }
+
+    .profileCardSmall {
+        position: relative;
+        width: 100%;
+        height: 250px;
+        box-shadow: none;
+        border-radius: 0;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .profilePicWrapper {
+        margin-top: -80%;
+        margin-left: -10%;
+        width: 120%;
+        height: auto;
+        aspect-ratio: calc(10/9);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: royalblue;
+        border-radius: 50%;
+        position: relative;
+    }
+
+    .profileCardLarge {
+        width: 100%;
+        height: 90%;
+        overflow: visible;
+        height: auto;
+        box-shadow: none;
+    }
+
+
+
+    .ProfilePic {
+        position: absolute;
+        bottom: -12.5%;
+        width: 25%;
+        border: 5px solid white;
+        box-shadow: none;
+    }
+
+    .ProfileName {
+        position: absolute;
+        top: 75%;
+        margin-top: 0px;
+        font-size: 30px;
+        position: absolute;
+        color: #fff;
+    }
+
+    .PersonalInfoItemWrapper {
+        flex-direction: column;
+    }
+
+    .PersonalInfoItem {
+        width: 100%;
+        border-top: 2px solid gray;
+        padding-left: 20px;
+        padding-top: 20px;
+        margin-bottom: 0px;
+        padding-bottom: 5px;
+    }
+
+    .PersonalInfoItemTitle {
+        color: royalblue;
+    }
+
+    .PeronalInfoItemDesc {
+        color: gray;
+    }
+
+    .PersonalInfoItem.full {
+        margin-left: 0px;
+    }
+}

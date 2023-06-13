@@ -1,0 +1,34 @@
+.WelcomeCard{
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    position: relative;
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    border-radius: 20px;
+}
+
+
+.WelcomeTitle{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.WelcomeCardLeft{
+    width: 80%;
+}
+
+.WelcomeContent{
+    font-size: 18px;
+    font-weight: 350;
+}
+
+.WelcomeCardRight{
+    position: absolute;
+    top: -47px;
+    right: 5%;
+}
+
+.WelcomeImage{
+    width: 100px;
+}

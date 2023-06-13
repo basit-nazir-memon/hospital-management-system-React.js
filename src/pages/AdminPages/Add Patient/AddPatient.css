@@ -1,0 +1,67 @@
+.addpatient{
+    margin: 10px;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: 500;
+    color: gray;
+}
+
+.name{
+    display: flex;
+}
+
+.formItem{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 100%;
+}
+
+#gender{
+    margin: 10px;
+}
+
+.formItem label{
+    color: gray;
+}
+
+.formItem input::placeholder {
+    color: lightgray;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formItem input{
+    outline-color: gray;
+}
+
+.saveBtn{
+    width: 200px;
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+    background-color: rgb(139, 30, 249);
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+.saveBtn:hover {
+    background-color: rgb(108, 0, 216);
+    border-radius: 20px;
+    transition: all 0.5s ease;
+}
+
+.buttonDiv{
+    margin-top: 20px;
+    margin-right: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
